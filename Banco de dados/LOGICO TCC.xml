@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="0" Top="275"/>
+		<Posicao Left="0" Top="180"/>
 		<TotalItens Valor="89"/>
 		<Tipo Valor="LÓGICO"/>
 		<Versao Valor="2.0.0"/>
@@ -641,7 +641,7 @@
       <Left Valor="386"/>
       <Top Valor="456"/>
       <Width Valor="164"/>
-      <Height Valor="107"/>
+      <Height Valor="118"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
       <Nula Valor="0"/>
@@ -730,6 +730,27 @@
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
           <Tipo Valor="float"/>
+          <TabOrigem Valor="0"/>
+          <CampoOrigem Valor="0"/>
+          <Complemento Valor=""/>
+          <OnUpdate Valor="0"/>
+          <OnDelete Valor="0"/>
+        </Campo>
+        <Campo nome="Observações" id="190">
+          <Left Valor="386"/>
+          <Top Valor="547"/>
+          <Width Valor="162"/>
+          <Height Valor="19"/>
+          <Fonte default="-1"/>
+          <Dicionario></Dicionario>
+          <Nula Valor="-1"/>
+          <Observacao></Observacao>
+          <Futuro></Futuro>
+          <Anexos/>
+          <ApenasSeparador Valor="0"/>
+          <IsKey Valor="0"/>
+          <IsFKey Valor="0"/>
+          <Tipo Valor="varchar(200)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -945,10 +966,10 @@
       </Campos>
     </Tabela>
     <Tabela nome="Pedido Produto" id="143">
-      <Left Valor="371"/>
-      <Top Valor="631"/>
-      <Width Valor="194"/>
-      <Height Valor="118"/>
+      <Left Valor="370"/>
+      <Top Valor="632"/>
+      <Width Valor="196"/>
+      <Height Valor="105"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
       <Nula Valor="0"/>
@@ -960,9 +981,9 @@
       <cOrdem Valor="0"/>
       <Campos>
         <Campo nome="ID_PedidoProduto" id="144">
-          <Left Valor="371"/>
-          <Top Valor="650"/>
-          <Width Valor="192"/>
+          <Left Valor="370"/>
+          <Top Valor="651"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -981,9 +1002,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="ID_Pedido" id="145">
-          <Left Valor="371"/>
-          <Top Valor="668"/>
-          <Width Valor="192"/>
+          <Left Valor="370"/>
+          <Top Valor="669"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1002,9 +1023,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="ID_Produto" id="146">
-          <Left Valor="371"/>
-          <Top Valor="686"/>
-          <Width Valor="192"/>
+          <Left Valor="370"/>
+          <Top Valor="687"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1023,9 +1044,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Quantidade" id="159">
-          <Left Valor="371"/>
-          <Top Valor="704"/>
-          <Width Valor="192"/>
+          <Left Valor="370"/>
+          <Top Valor="705"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1043,32 +1064,11 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="Observação" id="160">
-          <Left Valor="371"/>
-          <Top Valor="722"/>
-          <Width Valor="192"/>
-          <Height Valor="19"/>
-          <Fonte default="-1"/>
-          <Dicionario></Dicionario>
-          <Nula Valor="-1"/>
-          <Observacao></Observacao>
-          <Futuro></Futuro>
-          <Anexos/>
-          <ApenasSeparador Valor="0"/>
-          <IsKey Valor="0"/>
-          <IsFKey Valor="0"/>
-          <Tipo Valor="varchar(200)"/>
-          <TabOrigem Valor="0"/>
-          <CampoOrigem Valor="0"/>
-          <Complemento Valor=""/>
-          <OnUpdate Valor="0"/>
-          <OnDelete Valor="0"/>
-        </Campo>
       </Campos>
     </Tabela>
     <Tabela nome="Produtos" id="151">
-      <Left Valor="670"/>
-      <Top Valor="649"/>
+      <Left Valor="668"/>
+      <Top Valor="643"/>
       <Width Valor="175"/>
       <Height Valor="82"/>
       <Fonte default="-1"/>
@@ -1082,8 +1082,8 @@
       <cOrdem Valor="0"/>
       <Campos>
         <Campo nome="ID_Produto" id="156">
-          <Left Valor="670"/>
-          <Top Valor="668"/>
+          <Left Valor="668"/>
+          <Top Valor="662"/>
           <Width Valor="173"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1103,8 +1103,8 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Nome" id="157">
-          <Left Valor="670"/>
-          <Top Valor="686"/>
+          <Left Valor="668"/>
+          <Top Valor="680"/>
           <Width Valor="173"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1124,8 +1124,8 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Valor unit" id="158">
-          <Left Valor="670"/>
-          <Top Valor="704"/>
+          <Left Valor="668"/>
+          <Top Valor="698"/>
           <Width Valor="173"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1501,7 +1501,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="149">
               <Left Valor="468"/>
-              <Top Valor="564"/>
+              <Top Valor="575"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -1527,7 +1527,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="150">
               <Left Valor="468"/>
-              <Top Valor="616"/>
+              <Top Valor="617"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -1552,7 +1552,7 @@
     </LigaTabela>
     <LigaTabela nome="Pedido Produto_Produtos_1" id="153">
       <Left Valor="615"/>
-      <Top Valor="683"/>
+      <Top Valor="677"/>
       <Width Valor="15"/>
       <Height Valor="15"/>
       <Fonte default="-1"/>
@@ -1567,8 +1567,8 @@
           <MostraCardinalidade Valor="-1" Card_id="154"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="154">
-              <Left Valor="565"/>
-              <Top Valor="675"/>
+              <Left Valor="566"/>
+              <Top Valor="669"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -1593,8 +1593,8 @@
           <MostraCardinalidade Valor="-1" Card_id="155"/>
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="155">
-              <Left Valor="632"/>
-              <Top Valor="675"/>
+              <Left Valor="630"/>
+              <Top Valor="669"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>

@@ -65,9 +65,26 @@ create table Reservas (
 create table Pedidos (
   ID_Pedido int key,
   ID_Reserva int,
-  produto varchar(50),
-  descricao varchar(200),
-  valor float,
+  data date,
+  valor_total float,
+  observacoes varchar(200),
   foreign key(ID_Reserva)
   references
   Reservas(ID_Reserva));
+
+create table Produtos (
+  ID_Produto int key,
+  nome varchar(50),
+  valor_unit float);
+
+create table PedidosProdutos (
+  ID_PedidosProdutos int key,
+  ID_Pedido int,
+  ID_Produto int,
+  Quantidade int,
+  foreign key(ID_Pedido)
+  references
+  Pedidos(ID_Pedido),
+  foreign key(ID_Produto)
+  references
+  Produtos(ID_Produto));
