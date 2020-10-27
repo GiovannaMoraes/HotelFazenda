@@ -1,0 +1,73 @@
+create database hotel_fazenda;
+
+use hotel_fazenda;
+
+create table Login (
+  ID_Login int key,
+  usuario varchar(50),
+  senha char(6));
+
+
+create table Funcionarios (
+  ID_Funcionario int key,
+  ID_Login int,
+  nome varchar(200),
+  cargo varchar(50)
+  data_nasc date,
+  cpf char(11),
+  rg char(9),
+  telefone char(10),
+  salario float);
+
+
+create table Quartos (
+  ID_Quarto int key,
+  status varchar(50),
+  qtde_pessoas int,
+  preco_diaria float);
+
+
+create table Clientes (
+  ID_Cliente int key,
+  nome varchar(200),
+  data_nasc date,
+  cpf char(11),
+  rg char(9),
+  telefone char(10));
+
+create table Dependentes (
+  ID_Dependente int key,
+  ID_Cliente int,
+  nome varchar(200),
+  data_nasc date,
+  RG char(9),
+  foreign key(ID_Cliente)
+  references
+  Clientes(ID_Cliente));
+
+
+create table Reservas (
+  ID_Reserva int key,
+  ID_Quarto int,
+  ID_Cliente int,
+  status varchar(50),
+  dia_ckin date,
+  dia_ckout date,
+  total float,
+  foreign key(ID_Quarto)
+  references
+  Quartos(ID_Quarto),
+  foreign key(ID_Cliente)
+  references
+  Clientes(ID_Cliente));
+
+
+create table Pedidos (
+  ID_Pedido int key,
+  ID_Reserva int,
+  produto varchar(50),
+  descricao varchar(200),
+  valor float,
+  foreign key(ID_Reserva)
+  references
+  Reservas(ID_Reserva));

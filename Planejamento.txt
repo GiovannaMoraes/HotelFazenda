@@ -1,0 +1,56 @@
+
+	TCC escrito
+	- pesquisa sobre a linguagem
+	- descrição do bd
+	- descrição das telas
+	
+	Banco de Dados
+	- tabela quartos
+	- tabela clientes
+	- tabela pedidos
+	
+	- tabela reserva (quartos, clientes, pedidos)
+	
+	- tabela funcionários
+
+	- tabela login
+	
+
+	Modelagem
+	- login
+
+	- home (quartos, clientes, pedidos, funcionários, relatórios, logout)
+	
+	- quartos 
+	* tabela quartos (select por status) 
+		Filtro: data
+	-> disponiveis -> registro de reserva
+	-> ocupados -> relatório de reserva
+	-> manutenção
+
+	- clientes
+	* tabela clientes (select)
+		Filtro: nome, cpf
+	* registro de dados (insert)
+	* atualização de dados (update)
+	* excluir dados (delete)
+	
+	- pedidos 
+	* tabela pedidos (select)
+		Filtro: quarto, nome
+	* adição de pedido (insert)
+	* atualização de pedido
+	* excluir pedido (delete)
+
+	- funcionários
+	* tabela funcionarios (select)
+	* registro de dados (insert)
+	* atualização de dados (update)
+	* excluir dados (delete)
+
+	- reservas
+	* tabela reservas (select)
+		Filtro: nome, data, cpf, quarto
+	* adição de reserva (insert)
+	* atualização de reserva (update)
+	* exclusão de reserva (delete)
